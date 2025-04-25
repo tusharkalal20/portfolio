@@ -211,7 +211,7 @@ const workExperiences = {
         "• Evaluated multiple vendors and performed cost-benefit analyses for various product requirements within areas of account management, customer experience, marketing, and sales automation, optimizing spend on martech subscriptions.",
         "• Executed and analyzed integrated email marketing campaigns using automation technologies, improving deliverability, brand positioning, and engagement with the target audience of C-level executives."
       ]
-    }
+    },
     {
       role: "Business Analyst Intern",
       company: "MedTourEasy",
@@ -222,7 +222,7 @@ const workExperiences = {
         "• Acquired, cleaned, and processed global health expenditure data across economies, ensuring data quality and readiness for advanced analysis.",
         "• Developed interactive Power BI reports to visualize healthcare expenditure trends across countries and regions, uncovering key patterns, disparities, and insights on different geographies."
       ]
-    }
+    },
     {
       role: "Business Development Intern",
       company: "Times of India",
