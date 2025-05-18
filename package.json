@@ -27,7 +27,7 @@
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "npx update-browserslist-db@latest"
+    "postinstall": "npx update-browserslist-db@latest",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
     "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
   },
