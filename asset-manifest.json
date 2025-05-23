@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bb5f80b8.css",
+    "main.js": "/portfolio/static/js/main.5680beab.js",
+    "static/css/487.bb36206c.chunk.css": "/portfolio/static/css/487.bb36206c.chunk.css",
+    "static/js/487.7ae187c0.chunk.js": "/portfolio/static/js/487.7ae187c0.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.72bcd14d16f1ecb8432d.pdf",
+    "static/media/aws-logo.png": "/portfolio/static/media/aws-logo.dfbda65f1c0e9940ad74.png",
+    "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/Snowflake.png": "/portfolio/static/media/Snowflake.b74510428754f896accd.png",
+    "static/media/university of mumbai logo.jpg": "/portfolio/static/media/university of mumbai logo.3c9df3a993c1a9866480.jpg",
+    "static/media/manOnTable.svg": "/portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/contactMailDark.svg": "/portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/Google-Analytics-Logo.png": "/portfolio/static/media/Google-Analytics-Logo.51908fb0cc83d5e2717f.png",
+    "static/media/skill.svg": "/portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "index.html": "/portfolio/index.html",
+    "main.bb5f80b8.css.map": "/portfolio/static/css/main.bb5f80b8.css.map",
+    "main.5680beab.js.map": "/portfolio/static/js/main.5680beab.js.map",
+    "487.bb36206c.chunk.css.map": "/portfolio/static/css/487.bb36206c.chunk.css.map",
+    "487.7ae187c0.chunk.js.map": "/portfolio/static/js/487.7ae187c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb5f80b8.css",
+    "static/js/main.5680beab.js"
+  ]
+}
