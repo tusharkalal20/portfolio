@@ -13,24 +13,36 @@ export default function WorkExperience() {
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container" id="workExperience">
             <div>
-              <h1 className="experience-heading">Experiences</h1>
+              <h1 className="experience-heading">Work Experience</h1>
               <div className="experience-cards-div">
-                {workExperiences.experience.map((card, i) => {
-                  return (
-                    <ExperienceCard
-                      key={i}
-                      isDark={isDark}
-                      cardInfo={{
-                        company: card.company,
-                        desc: card.desc,
-                        date: card.date,
-                        companylogo: card.companylogo,
-                        role: card.role,
-                        descBullets: card.descBullets
-                      }}
-                    />
-                  );
-                })}
+                {workExperiences.experience.map((card, i) => (
+                  <div className="company-experience-card" key={i}>
+                    <div className="company-header">
+                      <img src={card.companylogo} alt={card.company} className="experience-roundedimg" />
+                      <div>
+                        <h2>{card.company}</h2>
+                        {card.location && <p>{card.location}</p>}
+                      </div>
+                    </div>
+                    <div className="positions-list">
+                      {card.positions.map((pos, j) => (
+                        <ExperienceCard
+                          key={j}
+                          isDark={isDark}
+                          isGrouped={true}
+                          cardInfo={{
+                            company: card.company,
+                            companylogo: undefined,
+                            role: pos.role,
+                            date: pos.date,
+                            desc: pos.desc,
+                            descBullets: pos.descBullets
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

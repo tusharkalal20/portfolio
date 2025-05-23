@@ -1,52 +1,53 @@
-import React, {useState, useEffect, lazy, Suspense} from "react";
-import {openSource} from "../../portfolio";
-import Contact from "../contact/Contact";
-import Loading from "../loading/Loading";
+import React, { useContext } from "react";
+// import "./Profile.scss";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
+import Button from "../../components/button/Button";
+import { greeting, illustration } from "../../portfolio";
+// import FeelingProud from "./FeelingProud";
+import StyleContext from "../../contexts/StyleContext";
 
-const renderLoader = () => <Loading />;
-const GithubProfileCard = lazy(() =>
-  import("../../components/githubProfileCard/GithubProfileCard")
-);
+// Safe fallback if openSource is not defined
+const openSource = null;
+
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
-  function setProfileFunction(array) {
-    setrepo(array);
-  }
+  const { isDark } = useContext(StyleContext);
 
-  useEffect(() => {
-    if (openSource.showGithubProfile === "true") {
-      const getProfileData = () => {
-        fetch("/profile.json")
-          .then(result => {
-            if (result.ok) {
-              return result.json();
-            }
-          })
-          .then(response => {
-            setProfileFunction(response.data.user);
-          })
-          .catch(function (error) {
-            console.error(
-              `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
-            );
-            setProfileFunction("Error");
-            openSource.showGithubProfile = "false";
-          });
-      };
-      getProfileData();
-    }
-  }, []);
-  if (
-    openSource.display &&
-    openSource.showGithubProfile === "true" &&
-    !(typeof prof === "string" || prof instanceof String)
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <GithubProfileCard prof={prof} key={prof.id} />
-      </Suspense>
-    );
-  } else {
-    return <Contact />;
-  }
+  return (
+    <div className="main" id="about">
+      <div className="greeting-div">
+        <div className="greeting-text-div">
+          <div>
+            <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
+              {greeting.title}
+            </h1>
+            <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p"}>
+              {greeting.subTitle}
+            </p>
+            <SocialMedia />
+            <div className="button-greeting-div">
+              <Button
+                text="Contact Me"
+                href="#contact"
+              />
+              {greeting.resumeLink && (
+                <Button
+                  text="See My Resume"
+                  newTab={true}
+                  href={greeting.resumeLink}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      {/* Optional open source section */}
+      {/* {openSource && (
+        <div>
+          // Your Open Source JSX here
+        </div>
+      )} */}
+    </div>
+  );
 }

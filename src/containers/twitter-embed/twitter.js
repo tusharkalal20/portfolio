@@ -1,8 +1,7 @@
-import React, {Suspense, useContext} from "react";
+import React, { Suspense, useContext } from "react";
 import "./twitter.scss";
 import Loading from "../loading/Loading";
-import {TwitterTimelineEmbed} from "react-twitter-embed";
-import {twitterDetails} from "../../portfolio";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 import StyleContext from "../../contexts/StyleContext";
 
 const renderLoader = () => <Loading />;
@@ -16,39 +15,45 @@ function timeOut() {
     }
   }, 10000);
 }
+
 var widthScreen = window.screen.width;
 
+// Default fallback if twitterDetails is not defined
+const twitterDetails = {
+  display: false,
+  userName: ""
+};
+
 export default function Twitter() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
 
   if (!twitterDetails.display) {
     return null;
   }
+
   if (!twitterDetails.userName) {
     console.error("Twitter username for twitter section is missing");
-  }
-  if (twitterDetails.userName) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <div className="tw-main-div" id="twitter">
-          <div className="centerContent">
-            <TwitterTimelineEmbed
-              sourceType="profile"
-              screenName={twitterDetails.userName}
-              options={{height: 400, width: {widthScreen}}}
-              placeholder={renderLoader()}
-              autoHeight={false}
-              borderColor="#fff"
-              key={isDark ? "1" : "2"}
-              theme={isDark ? "dark" : "light"}
-              noFooter={true}
-              onload={timeOut()}
-            />
-          </div>
-        </div>
-      </Suspense>
-    );
-  } else {
     return null;
   }
+
+  return (
+    <Suspense fallback={renderLoader()}>
+      <div className="tw-main-div" id="twitter">
+        <div className="centerContent">
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName={twitterDetails.userName}
+            options={{ height: 400, width: widthScreen }}
+            placeholder={renderLoader()}
+            autoHeight={false}
+            borderColor="#fff"
+            key={isDark ? "1" : "2"}
+            theme={isDark ? "dark" : "light"}
+            noFooter={true}
+            onload={timeOut()}
+          />
+        </div>
+      </div>
+    </Suspense>
+  );
 }

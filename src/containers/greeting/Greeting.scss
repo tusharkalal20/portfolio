@@ -120,6 +120,19 @@
   }
 }
 
+@media (max-width: 480px) {
+  .greeting-text {
+    font-size: 20px;
+  }
+  .greeting-text-p {
+    font-size: 12px;
+  }
+  .button-greeting-div {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 @media (max-width: 320px) {
   .main {
     width: auto;

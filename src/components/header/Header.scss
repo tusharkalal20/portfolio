@@ -180,3 +180,16 @@
     font-size: 12px;
   }
 }
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 4px;
+  }
+  .header .logo {
+    font-size: 1em;
+    margin-top: 4px;
+  }
+  .header li a {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}
