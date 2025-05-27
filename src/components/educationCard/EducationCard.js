@@ -6,14 +6,28 @@ import StyleContext from "../../contexts/StyleContext";
 export default function EducationCard({school}) {
   const imgRef = createRef();
 
-  const GetDescBullets = ({descBullets}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
-            {item}
-          </li>
-        ))
-      : null;
+  const GetDescTable = ({descBullets}) => {
+    return descBullets && descBullets.length > 0 ? (
+      <table className="education-courses-table">
+        <tbody>
+          {descBullets.map((item, i) => {
+            let course = item;
+            let desc = "";
+            const dashIdx = item.indexOf(" - ");
+            if (dashIdx !== -1) {
+              course = item.slice(0, dashIdx);
+              desc = item.slice(dashIdx + 3);
+            }
+            return (
+              <tr key={i}>
+                <td className="education-course-name-table">{course}</td>
+                <td className="education-course-desc-table">{desc}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    ) : null;
   };
   const {isDark} = useContext(StyleContext);
 
@@ -56,9 +70,7 @@ export default function EducationCard({school}) {
               </p>
               <p className="education-text-desc">{school.desc}</p>
               <div className="education-text-bullets">
-                <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
-                </ul>
+                <GetDescTable descBullets={school.descBullets} />
               </div>
             </div>
           </div>

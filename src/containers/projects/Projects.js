@@ -1,9 +1,11 @@
 import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
+import {openSource, socialMediaLinks, bigProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+import BigProjectCard from "../../components/bigProjectCard/BigProjectCard";
+
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -39,34 +41,48 @@ export default function Projects() {
   function setrepoFunction(array) {
     setrepo(array);
   }
-  if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
+
+  if (openSource.display) {
+    if (!(typeof repo === "string" || repo instanceof String)) {
+      return (
+        <Suspense fallback={renderLoader()}>
+          <div className="main" id="opensource">
+            <h1 className="project-title">Open Source Projects</h1>
+            <div className="repo-cards-div-main">
+              {repo.map((v, i) => {
+                if (!v) {
+                  console.error(
+                    `Github Object for repository number : ${i} is undefined`
+                  );
+                }
+                return (
+                  <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
                 );
-              }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
+              })}
+            </div>
+            <Button
+              text={"More Projects"}
+              className="project-button"
+              href={socialMediaLinks.github}
+              newTab={true}
+            />
           </div>
-          <Button
-            text={"More Projects"}
-            className="project-button"
-            href={socialMediaLinks.github}
-            newTab={true}
-          />
+        </Suspense>
+      );
+    } else {
+      return <FailedLoading />;
+    }
+  } else if (bigProjects.display) {
+    return (
+      <div className="main" id="bigprojects">
+        <h1 className="project-title">{bigProjects.title}</h1>
+        <p className="project-subtitle">{bigProjects.subtitle}</p>
+        <div className="repo-cards-div-main">
+          {bigProjects.projects.map((project, i) => (
+            <BigProjectCard key={i} project={project} isDark={isDark} />
+          ))}
         </div>
-      </Suspense>
+      </div>
     );
   } else {
     return <FailedLoading />;

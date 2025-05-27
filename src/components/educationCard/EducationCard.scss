@@ -51,7 +51,8 @@
 }
 
 .education-card-right {
-  max-width: 70%;
+  flex: 1;
+  min-width: 0;
 }
 
 .education-text-subHeader {
@@ -75,8 +76,70 @@
   margin-bottom: 0.5rem;
 }
 
-.education-text-bullets > ul {
-  margin-top: 0.5rem;
+.education-text-bullets {
+  margin-left: 14px;
+}
+
+.education-courses-table {
+  margin-left: 0.2rem;
+}
+
+.education-courses-table tr {
+  height: 1.2em;
+}
+
+.education-course-name-table,
+.education-course-desc-table {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.education-course-name-table {
+  position: relative;
+  padding-left: 12px;
+  padding-right: 10px;
+  font-weight: 600;
+  vertical-align: top;
+  width: 38%;
+  color: #444;
+  font-size: 0.85em;
+}
+
+.education-course-name-table::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #888;
+  font-size: 1.1em;
+  line-height: 1;
+  top: 0.1em;
+}
+
+.education-course-desc-table {
+  color: #666;
+  font-size: 0.85em;
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+.education-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.education-course-name {
+  font-weight: 600;
+  margin-right: 12px;
+  min-width: 240px;
+  flex-shrink: 0;
+}
+
+.education-course-desc {
+  color: #666;
+  font-size: 0.97em;
+  flex: 1;
+  word-break: break-word;
 }
 
 /* Media Query */
@@ -142,4 +205,16 @@
     max-width: 100%;
     padding: 0 2px;
   }
+}
+
+.dark-mode .education-text-school {
+  color: #fff !important;
+}
+
+.company-header h2 {
+  color: #222;
+}
+
+.dark-mode .company-header h2 {
+  color: #fff !important;
 }

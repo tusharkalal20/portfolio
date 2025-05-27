@@ -21,8 +21,8 @@ const illustration = {
 
 const greeting = {
   username: "Tushar Kalal",
-  title: "Hi there, I am Tushar!",
-  subTitle: emoji("I am passionate about transforming complex data into strategic business decisions | Analytics professional specializing in BI & Marketing insights 📊"),
+  title: "Hi, I'm Tushar!",
+  subTitle: emoji("and I am passionate about transforming complex data into strategic business decisions"),
   resumeLink: "https://cometmail-my.sharepoint.com/:b:/g/personal/txk230058_utdallas_edu/EQfbuX_8v_pFtswp_zkxbhoBiyWxh7bLJERlekHIY8LQfg?e=5b7Fca", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -71,7 +71,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Excel",
-      fontAwesomeClassname: "fa-solid fa-file-excel"
+      fontAwesomeClassname: "fas fa-table"
     },
     {
       skillName: "Snowflake",
@@ -79,7 +79,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Google Analytics",
-      fontAwesomeClassname: "fas fa-chart-line"
+      fontAwesomeClassname: "fab fa-google"
     },
     {
       skillName: "AWS",
@@ -87,7 +87,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Google Looker Studio",
-      fontAwesomeClassname: "fas fa-fire"
+      fontAwesomeClassname: "fas fa-chart-line"
     },
     {
       skillName: "Microsoft Azure",
@@ -126,9 +126,9 @@ const educationInfo = {
       duration: "June 2018 - December 2021",
       desc: "Ranked top 10% in the program.",
       descBullets: [
-        "Business Statistics",
-        "Business Research Methods",
-        "IT in Business Management ",
+        "Business Statistics - Time Series Analysis, Regression Analysis, ANOVA, Hypothesis Testing",
+        "Business Research Methods - Research Design, Sampling, Data Collection, Data Analysis, Data Interpretation",
+        "IT in Business Management - IT Infrastructure, IT Security, IT Governance, IT Risk Management",
       ]
     }
   ]
@@ -239,34 +239,86 @@ To know how to get github key look at readme.md */
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "My Projects",
+  subtitle: "Data Analytics & Business Intelligence Projects",
   projects: [
     {
-      image: require("./assets/images/aws-logo.png"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/marketing-mix-modeling.png"),
+      projectName: "Marketing Mix Modeling",
+      projectDesc: "Developed a comprehensive marketing analytics dashboard using Google Analytics and Power BI to track user behavior, conversion rates, and campaign performance. Implemented automated data pipelines and created interactive visualizations for key stakeholders.",
+      tools: [
+        { name: "Power BI", logo: require("./assets/images/powerbi-logo.png") },
+        { name: "Google Analytics", logo: require("./assets/images/Google-Analytics-Logo.png") }
+      ],
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+        { 
+          name: "View Project", 
+          url: "https://github.com/tusharkalal20" 
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/aws-logo.png"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Sales-Analytics.png"),
+      projectName: "Sales Analytics Dashboard",
+      projectDesc: "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
+      tools: [
+        { name: "Tableau", logo: require("./assets/images/tableau-logo.png") },
+        { name: "Excel", logo: require("./assets/images/excel-logo.png") }
+      ],
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+        { 
+          name: "View Dashboard", 
+          url: "https://public.tableau.com/app/profile/tushar.kalal/viz/SalesDashboard_16995530934340/SalesDashboard" 
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/website-analytics.jpeg"),
+      projectName: "Website Analytics",
+      projectDesc: "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
+      tools: [
+        { name: "Google Analytics", logo: require("./assets/images/Google-Analytics-Logo.png") },
+        { name: "Python", logo: require("./assets/images/python-logo.png") }
+      ],
+      footerLink: [
+        { 
+          name: "View Project", 
+          url: "https://lookerstudio.google.com/reporting/c4fb968b-cb0b-4546-a070-0e6541625753" 
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/project1.png"),
+      projectName: "Personal Financial Analysis",
+      projectDesc: "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
+      tools: [
+        { name: "Excel", logo: require("./assets/images/excel-logo.png") },
+        { name: "Python", logo: require("./assets/images/python-logo.png") }
+      ],
+      footerLink: [
+        { 
+          name: "View Project", 
+          url: "https://github.com/tusharkalal20/Personal-Finance-Analysis" 
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/marketing-mix-modeling.png"),
+      projectName: "Marketing Mix Modeling",
+      projectDesc: "Developed a comprehensive marketing analytics dashboard using Google Analytics and Power BI to track user behavior, conversion rates, and campaign performance. Implemented automated data pipelines and created interactive visualizations for key stakeholders.",
+      tools: [
+        { name: "Power BI", logo: require("./assets/images/powerbi-logo.png") },
+        { name: "Google Analytics", logo: require("./assets/images/Google-Analytics-Logo.png") }
+      ],
+      footerLink: [
+        { 
+          name: "View Project", 
+          url: "https://github.com/tusharkalal20" 
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -275,19 +327,19 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Certifications"),
   subtitle:
-    "Professional Certifications that I have done !",
+    "",
 
   achievementsCards: [
     {
-      title: "Google Analytics",
+      title: "Meta Data Analyst",
       subtitle:
-        "Google Analytics (GA 4) Certified",
-      image: require("./assets/images/Google-Analytics-Logo.png"),
-      imageAlt: "Google Code-In Logo",
+        "Professional Certificate - By Coursera",
+      image: require("./assets/images/meta-logo.png"),
+      imageAlt: "AWS Logo",
       footerLink: [
         {
           name: "View Certification",
-          url: "https://skillshop.credential.net/297c66a8-24b1-430f-8d26-ddbc51454c53#acc.8x1sgfI3"
+          url: "https://www.credly.com/badges/0e8d19e9-3bd0-4371-9408-de0fd2d413f9/public_url"
         }
       ]
     },
@@ -300,20 +352,36 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          url: "https://www.credly.com/badges/0e8d19e9-3bd0-4371-9408-de0fd2d413f9/public_url"
         }
       ]
     },
-
     {
-      title: "SnowPro® Associate: Platform Certification",
-      subtitle: "Snowflake Certified",
-      image: require("./assets/images/Snowflake.png"),
-      imageAlt: "PWA Logo",
+      title: "Meta Marketing Analytics",
+      subtitle:
+        "Professional Certificate - By Coursera",
+      image: require("./assets/images/meta-logo.png"),
+      imageAlt: "AWS Logo",
       footerLink: [
-        {name: "View Certification", url: "https://www.snowflake.com"}
+        {
+          name: "View Certification",
+          url: "https://www.credly.com/badges/0e8d19e9-3bd0-4371-9408-de0fd2d413f9/public_url"
+        }
       ]
-    }
+    },
+    {
+      title: "Google Analytics",
+      subtitle:
+        "GA 4 Certified",
+      image: require("./assets/images/Google-Analytics-Logo.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "View Certification",
+          url: "https://skillshop.credential.net/297c66a8-24b1-430f-8d26-ddbc51454c53#acc.8x1sgfI3"
+        }
+      ]
+    }  
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -378,7 +446,7 @@ export {
 };
 
 export const openSource = {
-  display: true,
+  display: false, // Changed to false to show manual projects instead of GitHub projects
   githubToken: "",
   githubUsername: "tusharkalal20",
   reposLength: 0,
