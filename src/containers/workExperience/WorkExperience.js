@@ -18,7 +18,11 @@ export default function WorkExperience() {
                 {workExperiences.experience.map((card, i) => (
                   <div className="company-experience-card" key={i}>
                     <div className="company-header">
-                      <img src={card.companylogo} alt={card.company} className="experience-roundedimg" />
+                      <img
+                        src={card.companylogo}
+                        alt={card.company}
+                        className="experience-roundedimg"
+                      />
                       <div>
                         <h2>{card.company}</h2>
                         {card.location && <p>{card.location}</p>}

@@ -34,20 +34,41 @@ export default function ExperienceCard({cardInfo, isDark, isGrouped = false}) {
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
       {/* Only show logo for non-grouped companies */}
       {!isGrouped && (
-        <div style={{display: 'flex', alignItems: 'flex-start', marginBottom: '1rem'}}>
-          <div style={{marginRight: '1rem'}}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "flex-start",
+            marginBottom: "1rem"
+          }}
+        >
+          <div style={{marginRight: "1rem"}}>
             <img
               src={cardInfo.companylogo}
               alt={cardInfo.company}
               className="experience-roundedimg"
-              style={{position: 'static', width: '60px', height: '60px', objectFit: 'contain', borderRadius: '10px', background: 'white', boxShadow: '0 0.5rem 1rem #b0b0b0', padding: '1.5rem'}}
+              style={{
+                position: "static",
+                width: "60px",
+                height: "60px",
+                objectFit: "contain",
+                borderRadius: "10px",
+                background: "white",
+                boxShadow: "0 0.5rem 1rem #b0b0b0",
+                padding: "1.5rem"
+              }}
             />
           </div>
           <div style={{flex: 1}}>
-            <div className="company-header" style={{marginBottom: '0.5rem'}}>
+            <div className="company-header" style={{marginBottom: "0.5rem"}}>
               <div>
-                <h2 style={{margin: 0, fontSize: '2rem', marginBottom: '0.5rem'}}>{cardInfo.company}</h2>
-                {cardInfo.location && <p style={{margin: 0, color: '#888'}}>{cardInfo.location}</p>}
+                <h2
+                  style={{margin: 0, fontSize: "2rem", marginBottom: "0.5rem"}}
+                >
+                  {cardInfo.company}
+                </h2>
+                {cardInfo.location && (
+                  <p style={{margin: 0, color: "#888"}}>{cardInfo.location}</p>
+                )}
               </div>
             </div>
             <div className="experience-text-details">
@@ -79,7 +100,10 @@ export default function ExperienceCard({cardInfo, isDark, isGrouped = false}) {
                 {cardInfo.desc}
               </p>
               <ul>
-                <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+                <GetDescBullets
+                  descBullets={cardInfo.descBullets}
+                  isDark={isDark}
+                />
               </ul>
             </div>
           </div>
@@ -116,7 +140,10 @@ export default function ExperienceCard({cardInfo, isDark, isGrouped = false}) {
             {cardInfo.desc}
           </p>
           <ul>
-            <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+            <GetDescBullets
+              descBullets={cardInfo.descBullets}
+              isDark={isDark}
+            />
           </ul>
         </div>
       )}

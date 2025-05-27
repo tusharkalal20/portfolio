@@ -1,7 +1,7 @@
-import React, { Suspense, useContext } from "react";
+import React, {Suspense, useContext} from "react";
 import "./twitter.scss";
 import Loading from "../loading/Loading";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import {TwitterTimelineEmbed} from "react-twitter-embed";
 import StyleContext from "../../contexts/StyleContext";
 
 const renderLoader = () => <Loading />;
@@ -25,7 +25,7 @@ const twitterDetails = {
 };
 
 export default function Twitter() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   if (!twitterDetails.display) {
     return null;
@@ -43,7 +43,7 @@ export default function Twitter() {
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName={twitterDetails.userName}
-            options={{ height: 400, width: widthScreen }}
+            options={{height: 400, width: widthScreen}}
             placeholder={renderLoader()}
             autoHeight={false}
             borderColor="#fff"

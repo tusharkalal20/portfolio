@@ -22,8 +22,11 @@ const illustration = {
 const greeting = {
   username: "Tushar Kalal",
   title: "Hi, I'm Tushar!",
-  subTitle: emoji("and I am passionate about transforming complex data into strategic business decisions"),
-  resumeLink: "https://cometmail-my.sharepoint.com/:b:/g/personal/txk230058_utdallas_edu/EQfbuX_8v_pFtswp_zkxbhoBiyWxh7bLJERlekHIY8LQfg?e=5b7Fca", // Set to empty to hide the button
+  subTitle: emoji(
+    "and I am passionate about transforming complex data into strategic business decisions"
+  ),
+  resumeLink:
+    "https://cometmail-my.sharepoint.com/:b:/g/personal/txk230058_utdallas_edu/EQfbuX_8v_pFtswp_zkxbhoBiyWxh7bLJERlekHIY8LQfg?e=5b7Fca", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -42,11 +45,18 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Harness data to uncover meaningful insights that in turn can drive business value",
+  subTitle:
+    "Harness data to uncover meaningful insights that in turn can drive business value",
   skills: [
-    emoji("- Ask business critical questions and identify if business problems can be solved using data"),
-    emoji("- Source, Clean, integrate, and manage the relevant data that is required for analysis"),
-    emoji("- Analyze clean data to derive insights for stakeholders enabling informed decision-making")
+    emoji(
+      "- Ask business critical questions and identify if business problems can be solved using data"
+    ),
+    emoji(
+      "- Source, Clean, integrate, and manage the relevant data that is required for analysis"
+    ),
+    emoji(
+      "- Analyze clean data to derive insights for stakeholders enabling informed decision-making"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -105,7 +115,8 @@ const educationInfo = {
     {
       schoolName: "The University of Texas at Dallas",
       logo: require("./assets/images/utd_logo.png"),
-      subHeader: "Master of Science in Business Analytics & Artificial Intelligence",
+      subHeader:
+        "Master of Science in Business Analytics & Artificial Intelligence",
       duration: "August 2024 - May 2026",
       desc: "Dean's Excellence Scholar | Head Of Finance - EnVision",
       descBullets: [
@@ -121,14 +132,14 @@ const educationInfo = {
     },
     {
       schoolName: "University of Mumbai",
-      logo: require("./assets/images/university of mumbai logo.jpg"), 
+      logo: require("./assets/images/university of mumbai logo.jpg"),
       subHeader: "Bachelor of Management Studies",
       duration: "June 2018 - December 2021",
       desc: "Ranked top 10% in the program.",
       descBullets: [
         "Business Statistics - Time Series Analysis, Regression Analysis, ANOVA, Hypothesis Testing",
         "Business Research Methods - Research Design, Sampling, Data Collection, Data Analysis, Data Interpretation",
-        "IT in Business Management - IT Infrastructure, IT Security, IT Governance, IT Risk Management",
+        "IT in Business Management - IT Infrastructure, IT Security, IT Governance, IT Risk Management"
       ]
     }
   ]
@@ -245,75 +256,89 @@ const bigProjects = {
     {
       image: require("./assets/images/marketing-mix-modeling.png"),
       projectName: "Marketing Mix Modeling",
-      projectDesc: "Developed a comprehensive marketing analytics dashboard using Google Analytics and Power BI to track user behavior, conversion rates, and campaign performance. Implemented automated data pipelines and created interactive visualizations for key stakeholders.",
+      projectDesc:
+        "Developed a comprehensive marketing analytics dashboard using Google Analytics and Power BI to track user behavior, conversion rates, and campaign performance. Implemented automated data pipelines and created interactive visualizations for key stakeholders.",
       tools: [
-        { name: "Power BI", logo: require("./assets/images/powerbi-logo.png") },
-        { name: "Google Analytics", logo: require("./assets/images/Google-Analytics-Logo.png") }
+        {name: "Power BI", logo: require("./assets/images/powerbi-logo.png")},
+        {
+          name: "Google Analytics",
+          logo: require("./assets/images/Google-Analytics-Logo.png")
+        }
       ],
       footerLink: [
-        { 
-          name: "View Project", 
-          url: "https://github.com/tusharkalal20" 
+        {
+          name: "View Project",
+          url: "https://github.com/tusharkalal20"
         }
       ]
     },
     {
       image: require("./assets/images/Sales-Analytics.png"),
       projectName: "Sales Analytics Dashboard",
-      projectDesc: "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
+      projectDesc:
+        "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
       tools: [
-        { name: "Tableau", logo: require("./assets/images/tableau-logo.png") },
-        { name: "Excel", logo: require("./assets/images/excel-logo.png") }
+        {name: "Tableau", logo: require("./assets/images/tableau-logo.png")},
+        {name: "Excel", logo: require("./assets/images/excel-logo.png")}
       ],
       footerLink: [
-        { 
-          name: "View Dashboard", 
-          url: "https://public.tableau.com/app/profile/tushar.kalal/viz/SalesDashboard_16995530934340/SalesDashboard" 
+        {
+          name: "View Dashboard",
+          url: "https://public.tableau.com/app/profile/tushar.kalal/viz/SalesDashboard_16995530934340/SalesDashboard"
         }
       ]
     },
     {
       image: require("./assets/images/website-analytics.jpeg"),
       projectName: "Website Analytics",
-      projectDesc: "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
+      projectDesc:
+        "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
       tools: [
-        { name: "Google Analytics", logo: require("./assets/images/Google-Analytics-Logo.png") },
-        { name: "Python", logo: require("./assets/images/python-logo.png") }
+        {
+          name: "Google Analytics",
+          logo: require("./assets/images/Google-Analytics-Logo.png")
+        },
+        {name: "Python", logo: require("./assets/images/python-logo.png")}
       ],
       footerLink: [
-        { 
-          name: "View Project", 
-          url: "https://lookerstudio.google.com/reporting/c4fb968b-cb0b-4546-a070-0e6541625753" 
+        {
+          name: "View Project",
+          url: "https://lookerstudio.google.com/reporting/c4fb968b-cb0b-4546-a070-0e6541625753"
         }
       ]
     },
     {
       image: require("./assets/images/project1.png"),
       projectName: "Personal Financial Analysis",
-      projectDesc: "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
+      projectDesc:
+        "An exercise to effectively manage money and analyze financial data with the aim to understand patterns in my income, expense and investing.",
       tools: [
-        { name: "Excel", logo: require("./assets/images/excel-logo.png") },
-        { name: "Python", logo: require("./assets/images/python-logo.png") }
+        {name: "Excel", logo: require("./assets/images/excel-logo.png")},
+        {name: "Python", logo: require("./assets/images/python-logo.png")}
       ],
       footerLink: [
-        { 
-          name: "View Project", 
-          url: "https://github.com/tusharkalal20/Personal-Finance-Analysis" 
+        {
+          name: "View Project",
+          url: "https://github.com/tusharkalal20/Personal-Finance-Analysis"
         }
       ]
     },
     {
       image: require("./assets/images/marketing-mix-modeling.png"),
       projectName: "Marketing Mix Modeling",
-      projectDesc: "Developed a comprehensive marketing analytics dashboard using Google Analytics and Power BI to track user behavior, conversion rates, and campaign performance. Implemented automated data pipelines and created interactive visualizations for key stakeholders.",
+      projectDesc:
+        "Developed a comprehensive marketing analytics dashboard using Google Analytics and Power BI to track user behavior, conversion rates, and campaign performance. Implemented automated data pipelines and created interactive visualizations for key stakeholders.",
       tools: [
-        { name: "Power BI", logo: require("./assets/images/powerbi-logo.png") },
-        { name: "Google Analytics", logo: require("./assets/images/Google-Analytics-Logo.png") }
+        {name: "Power BI", logo: require("./assets/images/powerbi-logo.png")},
+        {
+          name: "Google Analytics",
+          logo: require("./assets/images/Google-Analytics-Logo.png")
+        }
       ],
       footerLink: [
-        { 
-          name: "View Project", 
-          url: "https://github.com/tusharkalal20" 
+        {
+          name: "View Project",
+          url: "https://github.com/tusharkalal20"
         }
       ]
     }
@@ -326,14 +351,12 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Certifications"),
-  subtitle:
-    "",
+  subtitle: "",
 
   achievementsCards: [
     {
       title: "Meta Data Analyst",
-      subtitle:
-        "Professional Certificate - By Coursera",
+      subtitle: "Professional Certificate - By Coursera",
       image: require("./assets/images/meta-logo.png"),
       imageAlt: "AWS Logo",
       footerLink: [
@@ -345,8 +368,7 @@ const achievementSection = {
     },
     {
       title: "AWS Cloud Practitioner",
-      subtitle:
-        "AWS Cloud Practitioner Certified",
+      subtitle: "AWS Cloud Practitioner Certified",
       image: require("./assets/images/aws-logo.png"),
       imageAlt: "AWS Logo",
       footerLink: [
@@ -358,8 +380,7 @@ const achievementSection = {
     },
     {
       title: "Meta Marketing Analytics",
-      subtitle:
-        "Professional Certificate - By Coursera",
+      subtitle: "Professional Certificate - By Coursera",
       image: require("./assets/images/meta-logo.png"),
       imageAlt: "AWS Logo",
       footerLink: [
@@ -371,8 +392,7 @@ const achievementSection = {
     },
     {
       title: "Google Analytics",
-      subtitle:
-        "GA 4 Certified",
+      subtitle: "GA 4 Certified",
       image: require("./assets/images/Google-Analytics-Logo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -381,7 +401,7 @@ const achievementSection = {
           url: "https://skillshop.credential.net/297c66a8-24b1-430f-8d26-ddbc51454c53#acc.8x1sgfI3"
         }
       ]
-    }  
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
