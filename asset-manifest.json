@@ -1,28 +1,37 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bb5f80b8.css",
-    "main.js": "/portfolio/static/js/main.5680beab.js",
+    "main.css": "/portfolio/static/css/main.b198a182.css",
+    "main.js": "/portfolio/static/js/main.653c28fa.js",
     "static/css/487.bb36206c.chunk.css": "/portfolio/static/css/487.bb36206c.chunk.css",
     "static/js/487.7ae187c0.chunk.js": "/portfolio/static/js/487.7ae187c0.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/resume.pdf": "/portfolio/static/media/resume.72bcd14d16f1ecb8432d.pdf",
+    "static/media/Sales-Analytics.png": "/portfolio/static/media/Sales-Analytics.c9adb7e17bcc48c68bac.png",
+    "static/media/marketing-mix-modeling.png": "/portfolio/static/media/marketing-mix-modeling.2da97e3e0c5cf9eae822.png",
+    "static/media/project1.png": "/portfolio/static/media/project1.121aefc13301381d1c03.png",
     "static/media/aws-logo.png": "/portfolio/static/media/aws-logo.dfbda65f1c0e9940ad74.png",
     "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/Snowflake.png": "/portfolio/static/media/Snowflake.b74510428754f896accd.png",
+    "static/media/powerbi-logo.png": "/portfolio/static/media/powerbi-logo.5c1d48348a6e8fffbbb9.png",
     "static/media/university of mumbai logo.jpg": "/portfolio/static/media/university of mumbai logo.3c9df3a993c1a9866480.jpg",
+    "static/media/excel-logo.png": "/portfolio/static/media/excel-logo.f18c2d9480933a0718e6.png",
     "static/media/manOnTable.svg": "/portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/python-logo.png": "/portfolio/static/media/python-logo.7b8efdd9ba95c9d1613c.png",
+    "static/media/tableau-logo.png": "/portfolio/static/media/tableau-logo.7bd87b44eac8aeae62a3.png",
     "static/media/contactMailDark.svg": "/portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.ca4d60d20faefac75066.jpg",
     "static/media/developerActivity.svg": "/portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/website-analytics.jpeg": "/portfolio/static/media/website-analytics.8817404adf1bef304afd.jpeg",
+    "static/media/meta-logo.png": "/portfolio/static/media/meta-logo.2b827458874a12f4c98a.png",
     "static/media/Google-Analytics-Logo.png": "/portfolio/static/media/Google-Analytics-Logo.51908fb0cc83d5e2717f.png",
     "static/media/skill.svg": "/portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/portfolio/index.html",
-    "main.bb5f80b8.css.map": "/portfolio/static/css/main.bb5f80b8.css.map",
-    "main.5680beab.js.map": "/portfolio/static/js/main.5680beab.js.map",
+    "main.b198a182.css.map": "/portfolio/static/css/main.b198a182.css.map",
+    "main.653c28fa.js.map": "/portfolio/static/js/main.653c28fa.js.map",
     "487.bb36206c.chunk.css.map": "/portfolio/static/css/487.bb36206c.chunk.css.map",
     "487.7ae187c0.chunk.js.map": "/portfolio/static/js/487.7ae187c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb5f80b8.css",
-    "static/js/main.5680beab.js"
+    "static/css/main.b198a182.css",
+    "static/js/main.653c28fa.js"
   ]
 }
