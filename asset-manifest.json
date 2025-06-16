@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b198a182.css",
+    "main.css": "/portfolio/static/css/main.5d432ba2.css",
     "main.js": "/portfolio/static/js/main.2e410ae0.js",
     "static/css/487.bb36206c.chunk.css": "/portfolio/static/css/487.bb36206c.chunk.css",
     "static/js/487.7ae187c0.chunk.js": "/portfolio/static/js/487.7ae187c0.chunk.js",
@@ -25,13 +25,13 @@
     "static/media/Google-Analytics-Logo.png": "/portfolio/static/media/Google-Analytics-Logo.51908fb0cc83d5e2717f.png",
     "static/media/skill.svg": "/portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/portfolio/index.html",
-    "main.b198a182.css.map": "/portfolio/static/css/main.b198a182.css.map",
+    "main.5d432ba2.css.map": "/portfolio/static/css/main.5d432ba2.css.map",
     "main.2e410ae0.js.map": "/portfolio/static/js/main.2e410ae0.js.map",
     "487.bb36206c.chunk.css.map": "/portfolio/static/css/487.bb36206c.chunk.css.map",
     "487.7ae187c0.chunk.js.map": "/portfolio/static/js/487.7ae187c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b198a182.css",
+    "static/css/main.5d432ba2.css",
     "static/js/main.2e410ae0.js"
   ]
 }
