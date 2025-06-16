@@ -6,6 +6,7 @@
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  padding: 1.5rem 2rem; // Add horizontal padding for better left/right spacing
 }
 
 .experience-card-dark {
@@ -14,6 +15,7 @@
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  padding: 1.5rem 2rem; // Add horizontal padding for better left/right spacing
 }
 
 .experience-card:hover {
@@ -66,7 +68,7 @@
 
 .experience-text-company {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0;
   color: $lightBackground1;
   font-size: 25px;
@@ -100,17 +102,21 @@
   font-size: 25px;
   margin: 0px;
   padding-top: 1.5rem;
+  padding-left: 0; // Reduced left padding
   line-height: normal;
 }
+
 .dark-mode-text {
   color: $textColorDark !important;
 }
+
 .experience-text-date {
   text-align: left;
   color: $textColor;
   font-size: 19px;
   margin: 0px;
   padding-top: 1rem;
+  padding-left: 0; // Reduced left padding
   font-weight: normal;
 }
 
@@ -119,8 +125,9 @@
 }
 
 .experience-text-details {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem 0; // Reduced left padding
   margin-top: 0;
+  text-align: left; // Ensure details are left-aligned
 }
 
 .experience-text-details ul li {
@@ -147,17 +154,58 @@
 }
 
 @media (max-width: 768px) {
-  .experience-text-role {
-    font-size: 22px;
+  .experience-card,
+  .experience-card-dark {
+    padding: 0.7rem 0.5rem;
+    border-radius: 8px;
+  }
+  .company-experience-card {
+    padding: 0.7rem 0.5rem;
+    border-radius: 8px;
+  }
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .company-header img {
+    width: 36px;
+    height: 36px;
+    padding: 0.3rem;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .company-header h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+  .company-header p {
+    font-size: 0.9rem;
   }
   .experience-text-company {
-    font-size: 22px;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.2rem;
+  }
+  .experience-text-role {
+    font-size: 1rem;
+    padding-top: 0.3rem;
+    padding-left: 0;
   }
   .experience-text-date {
-    font-size: 18px;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    padding-left: 0;
+  }
+  .experience-text-details {
+    padding: 0.2rem 0.5rem 0.7rem 0.2rem;
+    font-size: 0.97rem;
   }
   .experience-text-desc {
-    font-size: 16px;
+    font-size: 0.97rem;
+  }
+  .positions-list {
+    gap: 0.7rem;
   }
 }
 

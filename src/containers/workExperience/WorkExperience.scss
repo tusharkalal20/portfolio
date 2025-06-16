@@ -35,4 +35,14 @@
     font-size: 30px;
     text-align: center;
   }
+  .experience-container {
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+  .experience-cards-div {
+    width: 100%;
+    min-width: 0;
+  }
 }

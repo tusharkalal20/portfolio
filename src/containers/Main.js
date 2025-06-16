@@ -22,7 +22,7 @@ import "./Main.scss";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const [isDark, setIsDark] = useLocalStorage("isDark", false); // Default to light mode
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 
@@ -54,12 +54,11 @@ const Main = () => {
             <About />
             <Skills />
             <StackProgress />
-            <Education />
-            <WorkExperience />
+            {/* New order starts here */}
             <Projects />
+            <WorkExperience />
             <Achievement />
-            <Blogs />
-            <Twitter />
+            <Education />
             <Contact />
             <Footer />
             <ScrollToTopButton />
